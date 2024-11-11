@@ -1,14 +1,16 @@
+import CourseCard from "./CourseCard";
+
 function CourseList() {
   const courses = [
-    { id: 1, name: "react" },
-    { id: 2, name: "next" },
-    { id: 3, name: "node" },
+    { id: 1, name: "react", desc: "this is react course" },
+    { id: 2, name: "next", desc: "this is next course" },
+    { id: 3, name: "node", desc: "this is node course" },
   ];
   return (
     <>
       <ul>
         {courses.map((course) => (
-          <li key={course.id}>{course.name}</li>
+          <CourseCard key={course.key} data={course} />
         ))}
       </ul>
     </>
