@@ -10,7 +10,7 @@ function CourseList() {
     <>
       <ul>
         {courses.map((course) => (
-          <CourseCard key={course.key} data={course} />
+          <CourseCard key={course.id} data={course} />
         ))}
       </ul>
     </>
