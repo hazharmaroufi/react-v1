@@ -1,0 +1,9 @@
+.cardList {
+  border: 1px solid gray;
+  margin-bottom: 4px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.select {
+  background-color: gray;
+}
