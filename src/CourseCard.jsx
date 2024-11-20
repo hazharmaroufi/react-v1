@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./CourseCard.css";
+import styles from "./CourseCard.module.css";
 
 function CourseCard({ data: { name, desc } }) {
   const [selected, setSelected] = useState(false);
@@ -8,8 +9,10 @@ function CourseCard({ data: { name, desc } }) {
   };
   return (
     <li className={`cardList ${selected ? "select" : ""}`}>
-      <h4>{name}</h4>
-      <p>{desc}</p>
+      <h4 style={{ color: selected ? "yellow" : "green", fontSize: "20px" }}>
+        {name}
+      </h4>
+      <p className={styles.parag}>{desc}</p>
       <button onClick={selectHandler}>Select</button>
     </li>
   );
